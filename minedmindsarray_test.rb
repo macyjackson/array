@@ -17,4 +17,9 @@ class MinedMindsArray < Minitest::Test
 		p mm_array
 		assert_equal(1, mm_array[0])
 	end
+
+	def test_second_position_in_array_is_mined
+		mm_array = create_mined_minds_array()
+		assert_equal("mined", mm_array[2])
+	end
 end
