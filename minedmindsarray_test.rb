@@ -22,4 +22,14 @@ class MinedMindsArray < Minitest::Test
 		mm_array = create_mined_minds_array()
 		assert_equal("mined", mm_array[2])
 	end
+
+	def test_forth_position_in_array_is_mined
+		mm_array = create_mined_minds_array()
+		assert_equal("minds", mm_array[4])
+	end
+	def test_forteenth_position_in_array_is_mined
+		mm_array = create_mined_minds_array()
+		assert_equal("mined minds", mm_array[14])
+	end
 end
+
